@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronic Calculator</title>
+    <style>
+        *{
+            margin: auto;
+        }
+        .Container {
+            border:5px rgb(5, 30, 167) solid;
+            border-top:rgb(165, 164, 164);
+            height: 550px;
+            width: 320px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 60px;
+            border-bottom-right-radius: 60px;
+            background-color: rgb(165, 164, 164);
+        }
+        #Top-Container{
+            margin:20px;
+            height:60px;
+        }
+        #Top-Container .Top1{
+            margin-left: 20px;
+            font-size:small;   
+        }
+        #Top-Container .Top2{
+            margin-left: 190px;
+            font-size: x-small;
+        }
+        #Top-Container .Solar{
+            border: 2px black solid;
+            height:30px;
+            width:145px;
+            margin-left:130px;
+            margin-top:-5px;
+            border-radius: 10px;
+            background-color: rgb(24, 1, 1, 0.781);
+        }
+        .Display{
+            border:2px solid black;
+            height: 80px;
+            margin-top: -10px;
+            margin-left: 20px;
+            margin-right: 20px;
+            border-radius: 3px;
+            border-top-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+            background-color: rgb(130, 143, 130);
+        }
+        #Mid{
+            margin-top: 15px;
+            text-align:center;
+        }
+        #Mid Button {
+            font-size:xx-small;
+            background-color: rgb(91, 91, 236);
+        }
+        #Mid Button a{
+            text-decoration: none;
+            color:gold;
+
+        }
+        .Top-Left-Button{
+            height: 25px;
+            width:40px;
+            margin:5px;
+            border-radius: 100%;
+            margin-top:0px;
+            border: none;
+        }
+        .Top-Right-Button{
+            height: 25px;
+            width:40px;
+            margin:7px;
+            border-radius:100%;
+            border: none;
+        }
+        
+        .Top-Mid-Button{
+            height: 70px;
+           width: 70px;
+           border-radius: 50%;
+           border: 2px solid black;
+        }
+        .Top-Mid-Button a{
+            font-size:medium;
+        }
+        #Middle-Top-Container Button{
+            color:white;
+            background-color: rgb(43, 40, 40);
+            margin: 23px;
+            height:20px;
+            width: 30px;
+            font-size: x-small;
+            margin-top: 0px;
+            border: none;
+        }
+        #Middle-Top-Container Button a{
+            text-decoration: none;
+            color: white;
+        }
+        .Mid-Left-Button{
+            border-radius: 5px;
+            border-bottom-left-radius: 9px;
+            border-bottom-right-radius: 9px;
+        }
+        .Mid-Right-Button{
+            border-radius: 5px;
+            border-bottom-left-radius: 9px;
+            border-bottom-right-radius: 9px;
+        }
+        #Middle-Container{
+            align-items: center;
+            margin-top: -20px;
+        }
+        #Middle-Container .Mid-Button{
+            color:white;
+            background-color: rgb(43, 40, 40);
+            height:20px;
+            width: 30px;
+            font-size: x-small;
+            margin: 0px;
+            margin-top: 8px;
+            margin-left: 17px;
+            border-radius: 5px;
+            border-bottom-left-radius: 9px;
+            border-bottom-right-radius: 9px;
+            border: none;
+        }
+        #Middle-Container .Mid-Button a{
+            text-decoration: none;
+            color:white
+        }
+        #Bottom-Container Button{
+            height:30px;
+            width: 40px;
+            font-size: large;
+            margin: 0px;
+            margin-top: 15px;
+            margin-left: 18px;
+            border-radius: 5px;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            font-weight: bold;
+            border: none;
+        }
+        #Bottom-Container Button a{
+            text-decoration: none;
+            color: black;
+        }
+        #Bottom-Container .Bottom-Ac-Button{ 
+            background-color: orangered;
+        }
+    </style>
+</head>
+<body>
+    <div class="Container" id="Con">
+        <div id="Top-Container">
+            <span class="Top1">fx-991ES PLUS</span>
+            <div class="Solar">
+            </div>
+           <span class="Top2">TWO WAY POWER</span>
+        </div>
+            <div class="Display"></div>
+        <div id="Mid">
+            <button class="Top-Left-Button"><a href="http://www.youtube.com">Shift</a></button>
+            <button class="Top-Left-Button"><a href="">Alpha</a></button>
+            <button class="Top-Mid-Button"><a href="">Replay</a> </button>
+            <button class="Top-Right-Button"><a href="">SetUp</a></button>
+            <button class="Top-Right-Button"><a href="">On</a></button>
+        </div>
+        <div id="Middle-Top-Container">
+            <button class="Mid-Left-Button"><a href="">calc</a></button>
+            <button class="Mid-Left-Button"><a href="">_</a></button>
+            <button class="Mid-Right-Button"><a href="">x-1</a></button>
+            <button class="Mid-Right-Button"><a href="">log.</a></button>
+        </div>
+        <div id="Middle-Container">
+            <button class="Mid-Button"><a href="">_</a></button>
+            <button class="Mid-Button"><a href="">_</a></button>
+            <button class="Mid-Button"><a href="">x2</a></button>
+            <button class="Mid-Button"><a href="">_</a></button>
+            <button class="Mid-Button"><a href="">log</a></button>
+            <button class="Mid-Button"><a href="">In</a></button>
+            <button class="Mid-Button"><a href="">(-)</a></button>
+            <button class="Mid-Button"><a href="">.,,,</a></button>
+            <button class="Mid-Button"><a href="">hyp</a></button>
+            <button class="Mid-Button"><a href="">sin</a></button>
+            <button class="Mid-Button"><a href="">cos</a></button>
+            <button class="Mid-Button"><a href="">tan</a></button>
+            <button class="Mid-Button"><a href="">RCL</a></button>
+            <button class="Mid-Button"><a href="">ENG</a></button>
+            <button class="Mid-Button"><a href="">(</a></button>
+            <button class="Mid-Button"><a href="">)</a></button>
+            <button class="Mid-Button"><a href="">S=D</a></button>
+            <button class="Mid-Button"><a href="">M+</a></button>
+        </div>
+        <div id="Bottom-Container">
+            <button class="Bottom-Button"><a href="">7</a></button>
+            <button class="Bottom-Button"><a href="">8</a></button>
+            <button class="Bottom-Button"><a href="">9</a></button>
+            <button class="Bottom-Ac-Button"><a href="">DEL</a></button>
+            <button class="Bottom-Ac-Button"><a href="">AC</a></button>
+            <button class="Bottom-Button"><a href="">4</a></button>
+            <button class="Bottom-Button"><a href="">5</a></button>
+            <button class="Bottom-Button"><a href="">6</a></button>
+            <button class="Bottom-Button"><a href="">*</a></button>
+            <button class="Bottom-Button"><a href="">/</a></button>
+            <button class="Bottom-Button"><a href="">1</a></button>
+            <button class="Bottom-Button"><a href="">2</a></button>
+            <button class="Bottom-Button"><a href="">3</a></button>
+            <button class="Bottom-Button"><a href="">+</a></button>
+            <button class="Bottom-Button"><a href="">-</a></button>
+            <button class="Bottom-Button"><a href="">0</a></button>
+            <button class="Bottom-Button"><a href="">.</a></button>
+            <button class="Bottom-Button"><a href="">x10</a></button>
+            <button class="Bottom-Button"><a href="">Ans</a></button>
+            <button class="Bottom-Button"><a href="">=</a></button>
+        </div>
+    </div>
+</body>
+</html>
